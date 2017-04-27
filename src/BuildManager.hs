@@ -200,6 +200,8 @@ printError err =
           ++ "Potential problems could be:\n"
           ++ "  * Misspelled the module name\n"
           ++ "  * Need to add a source directory or new dependency to " ++ Path.description
+          ++ "\n"
+          ++ "  * File name does not match the module name"
 
     ModuleDuplicates name maybeParent filePaths pkgs ->
         let
